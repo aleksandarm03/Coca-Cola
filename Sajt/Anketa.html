@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Анкета</title>
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<h1 style="text-align:center;">Анкета<h1>
+</head>
+<body style="background-color:rgb(201, 102, 26);">
+
+<form style="font-size:16pt;">
+  <label for="име">Име:</label><br>
+  <input type="text" id="име" name="име" value="Петар"><br><br>
+  <label for="презиме">Презиме:</label><br>
+  <input type="text" id="презиме" name="презиме" value="Петровић">
+  <br>
+  
+  <h3>1. Колико често пијете Coca-Colu?</h3>
+  <input type="radio" id="сваки дан" name="питање1" value="сваки дан">
+  <label for="сваки дан">Сваког дана</label><br>
+  
+  <input type="radio" id="неколико пута недељно" name="питање1" value="неколико пута недељно">
+  <label for="неколико пута недељно">3-5 пута недељно</label><br>
+  
+  <input type="radio" id="сваког месеца" name="питање1" value="сваког месеца">
+  <label for="сваког месеца">Сваког месеца</label><br>
+  
+  <input type="radio" id="друго" name="питање1" value="друго">
+  <label for="друго">Друго...</label>
+  <br>
+   <h3>2. Коју врсту Coca-Cole чешће пијете?</h3>
+   
+   <input type="radio" id="classic" name="питање2" value="classic">
+  <label for="classic">Coca-Cola classic</label><br>	
+  
+  <input type="radio" id="zero" name="питање2" value="zero">
+  <label for="zero">Coca-Cola Zero</label><br>
+  
+  <img src="Slike\classic.jpg" height="90"></img>
+  <img src="Slike\zero.jpg" height="90"></img>
+  
+  <h3>3.Да ли више волите Coca-Colu у лименци или флаши?</h3>
+   
+   <input type="radio" id="лименка" name="питање3" value="лименка">
+  <label for="лименка">У лименци</label><br>	
+  
+  <input type="radio" id="флаша" name="питање3" value="флаша">
+  <label for="флаша">У флаши</label><br>
+  
+  <h3>4. Да ли Вам се свиђа амбалажно паковање Coca-Cole?</h3>
+   
+   <input type="radio" id="да" name="питање4" value="да">
+  <label for="да">Свиђа ми се</label><br>	
+  
+  <input type="radio" id="не" name="питање4" value="не">
+  <label for="не">Не свиђа ми се. Променио/ла бих     <input type="text" id="не" name="питање4" value="" size="100"></label><br>
+  <br><br>
+  <button onclick="Функција()">Пошаљи анкету </button> <h5><a href="Pocetna.html" ">Почетна страница</h5>
+ 
+  
+  
+</form>
+<script>
+function Функција()
+{
+	alert("Хвала што сте учествовали у нашој анкети!");
+}
+</script>
+
+
+</body>
+</html>
